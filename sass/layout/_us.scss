@@ -1,0 +1,89 @@
+.us {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1em;
+    justify-content: center;
+    background-color: #241455;
+    border: solid 8px #EDFBFF;
+    border-radius: .5em;
+    box-shadow: 
+        3px 3px 2px rgba(0, 0, 0, .2),
+        -1px -1px 2px rgba(0, 0, 0, .2)
+    ;
+    color: #EDFBFF;
+    text-shadow: 2px 2px 1px #100828;
+    background-image: url(../img/stars.png), linear-gradient(180deg, rgba(44,32,99,1) 0%, rgba(66,62,139,1) 47%, rgba(114,126,224,1) 100%);
+    background-size: contain;
+    margin: 10px 10%;
+    font-size: larger;
+    margin-bottom: 150px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5px;
+        // text-shadow: 1px 2px 1px #EDFBFF;
+        text-shadow: none;
+        font-weight: bold;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+
+        }
+    }
+
+    &__item1 {
+        background-color: hsla(193, 100%, 90%, 0.267);
+        max-width: 100%;
+        padding: 1em;
+        border-radius: 3px;
+    }
+
+    &__item2 {
+        background-color: hsla(193, 100%, 90%, 0.498);
+        max-width: 100%;
+        padding: 1em;
+        border-radius: 3px;
+        color: #241455;
+    }
+
+    &__item3 {
+        max-width: 100%;
+        background-color: hsla(193, 100%, 90%, 0.498);
+        padding: 1em;
+        border-radius: 3px;
+        color: #241455;
+        a {
+            text-decoration: none;
+            color: #EDFBFF;
+            color: #241455;
+
+            @media (max-width: 375px){
+                font-size: smaller;
+            }
+        }
+    }
+
+    &__item4 {
+        height: 100px;
+        width: 100px;
+        justify-content: center;
+        @media (min-width: 768px) {
+            margin-top: 30px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        padding-left: 1em;
+    }
+}

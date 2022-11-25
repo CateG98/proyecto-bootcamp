@@ -1,0 +1,18 @@
+.main-nav-toggle {
+    display: none;
+
+    &:checked ~ .main-header .main-header__main-nav-container {
+        display: block;
+    }
+}
+
+.main-nav-toggle2 {
+    display: none;
+
+    &:checked ~ .main-header .main-header__main-modal-container {
+        display: block;
+        pointer-events: auto;
+        // opacity: 1;
+    }
+}
+

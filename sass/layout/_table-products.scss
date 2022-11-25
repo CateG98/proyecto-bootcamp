@@ -1,0 +1,54 @@
+.table-products {
+    padding-top: .5em;
+    width: 100%;
+    background-color: #727EE0;
+
+    &__caption {
+        color: #EDFBFF;
+        background-color: #241455;
+        border-bottom: solid 3px #727EE0;
+        padding: .5em;
+    }
+
+    &__th {
+        color: #443F8E;
+        border-bottom: solid 3px;
+    }
+
+    &__td {
+        color: #EDFBFF;
+        text-align: center;
+        border-bottom: solid 2px;
+    }
+
+    &__btn {
+        color: #443F8E;
+        background-color: #EDFBFF;
+        border: solid 2px #443F8E;
+        border-radius: .3em;
+        box-shadow: 1px 2px #443F8E;
+        margin-bottom: 5px;
+
+        &:hover,
+            &:focus {
+                background-color: #f5eff9;
+                cursor: pointer;
+                scale: 1.03;
+            }
+
+            &:active {
+                box-shadow: 1px 2.5px #241455;
+                transform: translateY(1.5px);
+            }
+    }
+
+    &__tr--length {
+        color: #EDFBFF;
+        text-align: center;
+        background-color: #443F8E;
+
+        td {
+            border: solid 5px #443F8E;
+        }
+    }
+}

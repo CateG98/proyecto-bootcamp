@@ -1,0 +1,86 @@
+[
+	{
+		"type": "Juego de mesa",
+		"img": "spirits-of-the-wilds.png",
+		"title": "Spirits of the wild",
+		"description": "Juego de estrategia donde los jugadores deben tener cuidado con el coyote: quiere ayudar al oponente a bloquear los movimiento.",
+		"price": "2800"
+	},
+	{
+		"type": "Juego de mesa",
+		"img": "jamaica.png",
+		"title": "Jamaica",
+		"description": "Juego multijugador donde tendras una carrera de ingenio con tu familia y amigos para convertirte en el pirata mas rico.",
+		"price": "5460"
+	},
+	{
+		"type": "Juego de cartas",
+		"img": "everdell.png",
+		"title": "Everdell",
+		"description": "Juego de colocación de trabajadores aerodinámico donde los jugadores van a trabajar para construir una ciudad de criaturas y construcciones.",
+		"price": "8620"
+	},
+	{
+		"type": "Juego de mesa",
+		"img": "root.png",
+		"title": "Root",
+		"description": "Root es un juego de aventura y guerra donde 2 a 4 jugadores luchan por el control de un vasto desierto.",
+		"price": "10250"
+	},
+	{
+		"type": "Juego de mesa",
+		"img": "azul.png",
+		"title": "Azul vitrales de sintra",
+		"description": "Juego multijugador donde tendras una carrera de ingenio con tu familia y amigos para convertirte en el pirata mas rico.",
+		"price": "5460"
+	},
+	{
+		"type": "Juego de cartas",
+		"img": "7-wonders.png",
+		"title": "7 Wonders architects",
+		"description": "7 Wonders Architects es un juego rápido, con reglas sencillas y una gran variedad de estrategias.",
+		"price": "5640"
+	},
+	{
+		"type": "Juego de cartas",
+		"img": "the-world.png",
+		"title": "The world game",
+		"description": "Encuentra el dato más potente sobre el país y gana. Ejercita tu memoria y tu cerebro mientras juegas.",
+		"price": "3450"
+	},
+	{
+		"type": "Juego de mesa",
+		"img": "mysterium-park.png",
+		"title": "Mysterium park",
+		"description": "En este juego deberas interpretar las visiones que envía un espíritu mediante cartas ilustradas.",
+		"price": "3680"
+	},
+	{
+		"type": "Juego de ingenio",
+		"img": "cubi-mag.png",
+		"title": "Cubimag Jr",
+		"description": "Cubimag es un rompecabezas tanto para niños como para adultos de un solo jugador.",
+		"price": "8620"
+	},
+	{
+		"type": "Juego de mesa",
+		"img": "escape-game.png",
+		"title": "Escape game",
+		"description": "Un juego con cartas y misterios que resolver para poder salir de la pirámide del faraón.",
+		"price": "1290"
+	},
+	{
+		"type": "Juego de ciencias",
+		"img": "robotics-detabot.png",
+		"title": "Robotics detabot",
+		"description": "Diviértete construyendo tu propio robot Deltabot con este fantástico kit de construcción para niños.",
+		"price": "2155"
+	},
+	{
+		"type": "Juego de mesa",
+		"img": "taller-de-robots.png",
+		"title": "Taller de robots",
+		"description": "Este puzzle infantil es un rompecabezas con el que los niños desarrollaran sus habilidades cognitivas.",
+		"price": "2580"
+	}
+]

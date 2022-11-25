@@ -1,0 +1,138 @@
+<section class="section-form">
+    <header class="section-form__header">
+        <h1>Formulario de alta</h1>
+        <div></div>
+    </header>
+
+    <form class="alta-form" action="#">
+        <div class="alta-form__id" hidden>
+            <label for="id">Id:</label>
+            <input id="id" name="id">
+        </div>
+        <div class="alta-form__name">
+            <label class="alta-form__label" for="title">Nombre:<span class="alta-form__necesary">*</span></label>
+            <div class="alta-form__column">
+                <input class="alta-form__input" type="text" name="title" id="title">
+                <div class="alta-form__error alta-form__error-name"></div>
+            </div>
+        </div>
+
+        <div class="alta-form__price">  
+            <label class="alta-form__label" for="price">Precio:<span class="alta-form__necesary">*</span></label>
+            <div class="alta-form__column">
+                <input class="alta-form__input" type="text" name="price" id="price">
+                <div class="alta-form__error alta-form__error-price"></div>
+            </div>
+        </div>
+
+            <div class="alta-form__direction">  
+                <label class="alta-form__label" for="stock">Stock:<span class="alta-form__necesary">*</span></label>
+                <div class="alta-form__column">
+                    <input class="alta-form__input alta-form__input-stock" type="text" name="stock" id="stock">
+                    <div class="alta-form__error alta-form__error-stock"></div>
+                </div>
+            </div>
+    
+            <div class="alta-form__shipping">
+                <label class="alta-form__label" for="shipping-yes">Envio sin cargo:<span class="alta-form__necesary">*</span></label>
+                <div class="alta-form__row">
+                    <div>
+                        <input type="radio" name="shipping" id="shipping-yes" checked="checked">
+                        <label class="alta-form__label" for="shipping-yes">Si</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="shipping" id="shipping-no">
+                        <label class="alta-form__label" for="shipping-no">No</label>
+                    </div>
+                </div>
+            </div>
+
+        <div class="alta-form__brand">
+            <label class="alta-form__label" for="brand">Marca:</label>
+            <div class="alta-form__column">
+                <input list="brands" class="alta-form__input alta-form__input-brand" name="brand" id="brand">
+                <datalist id="brands">
+                    <option value="mattel">
+                    <option value="hasbro">
+                    <option value="fisher Price">
+                    <option value="bandai">
+                    <option value="lego">
+                    <option value="playmobil">
+                    <option value="barbie">
+                    <option value="chicco">
+                    <option value="nenuco">
+                </datalist>
+                <div class="alta-form__error alta-form__error-brand"></div>
+            </div>
+        </div>
+            
+        <div class="alta-form__category">
+            <label class="alta-form__label" for="category">Categoría:</label>
+            <div class="alta-form__column">
+                <input list="toys-categories" class="alta-form__input alta-form__input-category" name="category" id="category">
+                <datalist id="toys-categories">
+                    <option value="Juegos de mesa">
+                    <option value="Juegos de cartas">
+                    <option value="Juegos de ingenio">
+                    <option value="Peluches">
+                    <option value="Figuras de acción y muñecos">
+                    <option value="Artes y manualidades">
+                </datalist>
+                <div class="alta-form__error alta-form__error-category"></div>
+            </div>
+        </div>
+
+        <div class="alta-form__short-description">
+            <label class="alta-form__label" for="short-description">Descripción corta:<span class="alta-form__necesary">*</span></label>
+            <div class="alta-form__column">
+                <textarea class="alta-form__textarea alta-form__textarea-short-description" name="short-description" id="short-description" cols="20" rows="2"></textarea>
+                <div class="alta-form__error alta-form__error-short-description"></div>
+            </div>
+        </div>
+
+        <div class="alta-form__long-description">
+            <label class="alta-form__label" for="long-description">Descripción larga:<span class="alta-form__necesary">*</span></label>
+            <div class="alta-form__column">
+                <textarea class="alta-form__textarea alta-form__textarea-long-description" name="long-description" id="long-description" cols="20" rows="3"></textarea>
+                <div class="alta-form__error alta-form__error-long-description"></div>
+            </div>
+        </div>
+
+        <div class="alta-form__age-from">
+            <label class="alta-form__label" for="age-from">Edad desde:<span class="alta-form__necesary">*</span></label>
+            <div class="alta-form__column">
+                <input class="alta-form__input alta-form__input-age-from" type="number" name="age-from" id="age-from" min="3" max="100">
+                <div class="alta-form__error alta-form__error-age-from"></div>
+            </div>
+        </div>
+
+        <div class="alta-form__age-up-to">
+            <label class="alta-form__label" for="age-up-to">Edad hasta:<span class="alta-form__necesary">*</span></label>
+            <div class="alta-form__column">
+                <input class="alta-form__input alta-form__input-age-up-to" type="number" name="age-up-to" id="age-up-to" min="5" max="100">
+                <div class="alta-form__error alta-form__error-age-up-to"></div>
+            </div>
+        </div>
+            
+        <!-- <div class="alta-form__photo">                
+            <label class="alta-form__label" for="img">Foto:<span class="alta-form__necesary">*</span></label>
+            <div class="alta-form__column">
+                <input class="alta-form__input alta-form__input-photo" type="file" name="img" id="img">
+                <div class="alta-form__error alta-form__error-photo"></div>
+            </div>
+        </div> -->
+            
+        <p><span class="necesary">*</span> campos obligatorios</p>
+            
+        <div class="alta-form__button">
+            <button type="button" class="alta-form__submit alta-form__btn-create">Crear</button>
+            <button type="button" class="alta-form__update alta-from__btn-update" disabled>Guardar</button>
+            <button type="reset" class="alta-form__reset alta-form__btn-cancel" disabled>Cancelar</button>
+        </div>
+    </form>
+</section>
+
+<section class="section-products-table">
+    <h2>Listado de productos</h2>
+    <div class="products-table-container"></div>
+</section>

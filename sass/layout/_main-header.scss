@@ -1,0 +1,258 @@
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0%;
+
+    &__logo-container {
+        height: 100px;
+        background: rgb(36,20,85);
+        background: linear-gradient(180deg, rgba(36,20,85,1) 0%, rgba(114,126,224,1) 89%);
+        padding: 1em;
+
+        @media (min-width: 320px) {
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            flex-basis: 15%;
+        }
+    }
+
+    &__logo-container-logo {
+        display: flex;
+        height: 100px;
+        max-width: 100%;
+    }
+
+    &__logo-container-img {
+        height: 80px;
+        width: auto;
+
+    }
+    
+    &__logo-container-letters {
+        height: 50px;
+        width: auto;
+        margin-top: .5em;
+        margin-left: 5px;
+    }
+
+    
+    &__search-form-container {
+        padding: 1em;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+
+        @media (min-width:320px) {
+            height: 50px;
+            padding-top: 10px;
+            background: rgb(36,20,85);
+        }
+
+        @media (min-width: 768px) {
+            background: rgb(36,20,85);
+            background: linear-gradient(180deg, rgba(36,20,85,1) 0%, rgba(114,126,224,1) 89%);
+            order: 2;
+            flex-basis: 5em;
+            flex-grow: 0;
+            flex-shrink: 1;
+            height: 100px;
+            padding-top: 2em;
+        }
+        
+    }
+
+    &__search-form-container-input {
+        background-color: #EDFBFF;
+        border-left: solid 2px #727EE0;
+        border-bottom: solid 2px #727EE0;
+        border-top: solid 2px #727EE0;
+        border-right: none;
+        border-radius: .3em 0 0 .3em;
+        padding: .3em;
+        
+        @media (min-width: 320px) {
+            width: 90px;
+        }
+        
+        @media (min-width: 768px) {
+            width: 80px;
+            height: 40px;
+        }
+        
+        @media (min-width: 1024px) {
+            width: auto;
+        }
+
+        &:focus {
+            background-color: #f5eff9;
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #727EE0;
+        }
+    }
+
+    &__search-form-container-button {
+        background-color: #EDFBFF;
+        border-right: solid 2px #727EE0;
+        border-bottom: solid 2px #727EE0;
+        border-top: solid 2px #727EE0;
+        border-left: none;
+        border-radius: 0 .3em .3em 0;
+        color: transparent;
+        background-image: url(../img/lupa-lila.png);
+        background-repeat: no-repeat;
+        background-size: auto 80%;
+        background-position: right 5px center;
+        padding: .3em;
+
+        &:hover,
+        &:focus {
+            background-image: url(../img/lupa.png);
+            background-color: #f5eff9;
+            border-left: none;
+            outline: none;
+        }
+
+        @media (min-width: 768px) {
+            height: 40px;
+        }
+    }
+    
+    
+    &__cart-button-container {
+        position: relative;
+        height: 100px;
+        background: rgb(36,20,85);
+        background: linear-gradient(180deg, rgba(36,20,85,1) 0%, rgba(114,126,224,1) 89%);
+        padding: 1em;
+        flex-basis: 5em;
+
+        &:hover,
+        &:focus {
+            background: #443F8E;
+            outline: none;
+        }
+
+        @media (min-width:320px) and (max-width: 767px) {
+            height: 50px;
+            padding: .5em;
+            background: rgb(36,20,85);
+        }
+
+        @media (min-width: 768px) {
+            order: 3;
+        }
+    }
+
+    &__cart-button-container-img {
+        padding: .3em;
+        max-width: 100%;
+        max-height: 100%;
+
+        @media (min-width:320px) and (max-width: 767px) {
+            position: relative;
+            bottom: 15px;
+            left: 10px;
+        }
+    }
+
+    &__cart-button-container-item-number {
+        position: relative;
+        color: #727EE0;
+        background-color: #EDFBFF;
+        border-radius: 100%;
+        padding: .2em .5em;
+        left: 2.5em;
+        font-size: smaller;
+
+        @media (min-width:320px) and (max-width: 767px) {
+            position: relative;
+            bottom: 5px;
+            left: 45px;
+        }
+    }
+    
+    &__hamburger-button-container {
+        background: rgb(36,20,85);
+        padding: 1em;
+        height: 50px;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__main-nav-container {
+        background: rgb(36,20,85);
+        background: linear-gradient(180deg, rgba(36,20,85,1) 0%, rgba(114,126,224,1) 89%);
+        flex-basis: 100%;
+        display: none;
+        flex-grow: 1;
+
+        @media (min-width: 768px) {
+            flex-basis: auto;
+            order: 1;
+            display: block;
+        }
+    }
+
+    &__main-modal-container {
+        background-color: #7982848d;
+        background-image: url(../img/stars.png);
+        background-size: contain;
+        z-index: 3;
+        display: none;
+        position: fixed;
+        // opacity: 0;
+        pointer-events: none;
+        bottom: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        animation: fadeIn .3s ease-in-out;
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 320px) {
+            top: 150px;
+        }
+        
+        @media (min-width: 768px) {
+            top: 100px;
+        }
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

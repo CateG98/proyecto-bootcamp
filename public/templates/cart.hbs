@@ -1,0 +1,13 @@
+{{#each product}}
+
+        <p class="main-modal__title">{{cardTitle}}</p>
+        <div class="main-modal__flex">
+            <img class="main-modal__img" src="{{cardImgSrc}}" alt="producto">
+            <p id="price" class="main-modal__price">{{cardPrice}}</p>
+            <button class="main-modal__plus-button">+</button>
+            <input class="main-modal__quantity" name="quantity" type="numberic" min="1" max="200" value="1">
+            <button class="main-modal__minus-button">-</button>
+            <button class="main-modal__remove-button">&times;</button>
+        </div>
+
+{{/each}}

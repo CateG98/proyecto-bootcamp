@@ -1,0 +1,37 @@
+<section class="section-form">
+    <header class="section-form__header">
+        <h1>Formulario de contacto</h1>
+        <div></div>
+    </header>
+
+    <form class="contact-form" action="#">
+        <div class="contact-form__name">
+            <label class="contact-form__label" for="name">Nombre:<span class="contact-form__necesary">*</span></label>
+            <div class="contact-form__column">
+                <input class="contact-form__input contact-form__input-name" type="text" name="name" id="name" value="">
+                <div class="contact-form__error contact-form__error-name"></div>
+            </div>
+        </div>
+
+        <div class="contact-form__email">
+            <label class="contact-form__label" for="email">E-mail:<span class="contact-form__necesary">*</span></label>
+            <div class="contact-form__column">
+                <input class="contact-form__input contact-form__input-email" type="email" name="email" id="email" value="">
+                <div class="contact-form__error contact-form__error-email"></div>
+            </div>
+        </div>
+
+        <div class="contact-form__comments">
+            <label class="contact-form__label" for="comments">Comentarios:<span class="contact-form__necesary">*</span></label>
+            <div class="contact-form__column">
+                <textarea class="contact-form__textarea" name="comments" id="comments" cols="20" rows="3"></textarea>
+                <div class="contact-form__error contact-form__error-comments"></div>
+            </div>
+        </div>
+
+        <div class="contact-form__button">
+            <button type="submit" class="contact-form__submit">Enviar</button>
+            <button type="reset" class="contact-form__reset">Resetear</button>
+        </div>
+    </form>
+</section>

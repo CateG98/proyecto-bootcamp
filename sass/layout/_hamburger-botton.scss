@@ -1,0 +1,51 @@
+.hamburger-button {
+    display: block;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    border-radius: .2em;
+    bottom: 5px;
+
+    &:hover {
+        background-color: #727EE0;
+    }
+    
+    &__top-bread {
+        display: block;
+        position: absolute;
+        width: 80%;
+        height: 10%;
+        top: 20%;
+        left: 10%;
+        background-color: #EDFBFF;
+        border-radius: 1em;
+        box-shadow: 0 0 3px #9ecaed;
+    }
+
+    &__meat {
+        display: block;
+        position: absolute;
+        width: 80%;
+        height: 10%;
+        top: 50%;
+        left: 10%;
+        background-color: #EDFBFF;
+        transform: translateY(-50%);
+        border-radius: 1em;
+        box-shadow: 0 0 3px #9ecaed;
+    }
+    
+    &__bottom-bread {
+        display: block;
+        position: absolute;
+        width: 80%;
+        height: 10%;
+        bottom: 20%;
+        left: 10%;
+        background-color: #EDFBFF;
+        border-radius: 1em;
+        box-shadow: 0 0 3px #9ecaed;
+    }
+}
+

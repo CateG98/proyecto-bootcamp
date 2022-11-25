@@ -1,0 +1,43 @@
+{{#if products.length }}
+    <table class="table-products">
+        <caption class="table-products__caption">Productos</caption>
+        <thead>
+            <tr>
+                <th class="table-products__th" scope="column">Nombre</th>
+                <th class="table-products__th" scope="column">Precio</th>
+                <th class="table-products__th" scope="column">Descripción</th>
+                <th class="table-products__th" scope="column">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+                <tr class="table-products__tr">
+                    <td class="table-products__td" data-product-property="id" hidden>{{id}}</td>
+                    <td class="table-products__td" data-product-property="title">{{title}}</td>
+                    <td class="table-products__td" data-product-property="price">{{price}}</td>
+                    <td class="table-products__td" data-product-property="stock" hidden>{{stock}}</td>
+                    <td class="table-products__td" data-product-property="shipping" hidden>{{shipping}}</td>
+                    <td class="table-products__td" data-product-property="brand" hidden>{{brand}}</td>
+                    <td class="table-products__td" data-product-property="category" hidden>{{category}}</td>
+                    <td class="table-products__td" data-product-property="description">{{description}}</td>
+                    <td class="table-products__td" data-product-property="short-description" hidden>{{short-description}}</td>
+                    <td class="table-products__td" data-product-property="long-description" hidden>{{long-description}}</td>
+                    <td class="table-products__td" data-product-property="age-from" hidden>{{age-from}}</td>
+                    <td class="table-products__td" data-product-property="age-up-to" hidden>{{age-up-to}}</td>
+                    <td class="table-products__td" data-product-property="img" hidden>{{img}}</td>
+                    <td class="table-products__td">
+                        <button class="table-products__btn btn-edit" title="Editar producto">Edit</button>
+                        <button class="table-products__btn btn-delete" title="Eliminar producto">X</button>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+        <tfoot>
+            <tr class="table-products__tr table-products__tr--length">
+                <td colspan="5">Se encontraron {{products.length}} productos</td>
+            </tr>
+        </tfoot>
+    </table>
+{{else}}
+    <p>No se encontraron productos</p>
+{{/if}}

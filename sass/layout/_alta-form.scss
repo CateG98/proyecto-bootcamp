@@ -1,0 +1,199 @@
+.alta-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #443F8E;
+    background-image: url(../img/cohete-form.png), linear-gradient(180deg, rgba(36,20,85,1) 0%, rgba(114,126,224,1) 89%);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: 24vh, contain;
+    background-position: right;
+    width: 600px;
+    padding: 2em;
+    border: solid 10px #EDFBFF;
+    border-radius: .5em;
+    box-shadow: 
+        3px 3px 2px rgba(0, 0, 0, .2),
+        -1px -1px 2px rgba(0, 0, 0, .2)
+    ;
+    color: #EDFBFF;
+    gap: .5em;
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-right: 18vh;
+
+    @media (max-width: 630px) {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 95%;
+    }
+
+    &__short-description,
+    &__long-description {
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+            border: solid 2px #95a0f7;
+            border-radius: .3em;
+            transition: all 0.30s ease-in-out;
+            width: 100%;
+            max-width: 100%;
+
+            &:hover,
+            &:focus {
+                // background-color: #f5eff9;
+                outline: none;
+                box-shadow: 0 0 5px #f0e7f6;
+            }
+        }
+    }
+
+    &__name,
+    &__price,
+    &__brand,
+    &__category,
+    &__photo {
+
+        @media (min-width: 320px) {
+            flex-direction: column;
+        }
+
+        @media (min-width: 560px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+    }
+    
+    &__input {
+        color: #241455;
+        border: solid 2px #95a0f7;
+        border-radius: .3em;
+        width: 100%;
+        margin-left: 5px;
+        transition: all 0.30s ease-in-out;
+        margin-top: 5px;
+
+        &:hover,
+        &:focus {
+            background-color: #f5eff9;
+            outline: none;
+            box-shadow: 0 0 5px #f0e7f6;
+        }
+    }
+
+    &__button {
+        text-align: center;
+
+        button {
+            padding: .3em;
+            color: #443F8E;
+            background-color: #EDFBFF;
+            border: solid 2px #443F8E;
+            border-radius: .3em;
+            box-shadow: 1px 2px #443F8E;
+            margin-bottom: 5px;
+
+            &:hover,
+            &:focus {
+                background-color: #f5eff9;
+                cursor: pointer;
+                scale: 1.03;
+            }
+
+            &:active {
+                box-shadow: 1px 5px #241455;
+                transform: translateY(4px);
+            }
+        }
+    }   
+
+    &__stock {
+            display: flex;
+            flex-direction: column;
+    }
+
+    &__row {
+            display: flex;
+            flex-direction: row;
+            gap: .5em;
+    }
+
+    &__direction {
+        @media (min-width: 320px) {
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+        }
+        @media (min-width: 560px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__input-photo {
+        background-color: transparent;
+        border: none;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            box-shadow: 0 0 5px #f0e7f6;
+        }
+    }
+
+    &__column {
+        width: 100%;
+        position: relative;
+    }
+
+    &__error {
+        background-color: #EDFBFF;
+        color: #FE394D;
+        box-shadow: 
+        3px 3px 2px rgba(0, 0, 0, .2),
+        -1px -1px 2px rgba(0, 0, 0, .2)
+        ;
+        width: inherit;
+        position: absolute;
+        border-radius: 3px;
+        margin-left: 5px;
+        padding: .5em;
+        display: none;
+        z-index: 1;
+        animation: fadeIn .3s ease-in;
+
+        @keyframes fadeIn {
+            from { 
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+    }
+
+    &__error-name {
+        z-index: 2;
+    }
+
+    &__input.error {
+        background: url(../img/error.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right 5px center;
+        background-color: #ff8f9c;
+        color: #EDFBFF;
+        transition: background-image 0ms;
+    }
+
+    &__textarea.error {
+        background-color: #ff8f9c;
+        color: #EDFBFF;
+    }
+}

@@ -1,0 +1,30 @@
+{{#if products}}
+    {{#each products}}
+        <div class="card">
+            <div class="card__category">
+                <p>{{type}}</p>
+                <div class="card__category-triangle"></div>
+                <div class="card__category-triangle-white"></div>
+            </div>
+            <a href="#" class="card__link-add">Agregar</a>
+            <div class="card__product-add" hidden></div>
+            <article class="card__article">
+                <div class="card__image-container">
+                    <img src="img/{{img}}" alt="Producto" class="card__image">
+                </div>
+                <div class="card__content">
+                    <h2 class="card__heading">{{title}}</h2>
+                    <div class="card__description">
+                        <p>{{description}}</p>
+                    </div>
+                    <div class="card__price">
+                        <p class="card__price-p">Precio:${{price}}</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    {{/each}}
+{{else}}
+    <h2>No se encontraron productos</h2>
+{{/if}}
+
